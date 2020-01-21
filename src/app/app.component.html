@@ -1,0 +1,30 @@
+
+<div class="container">
+    <h1 class="yellow">Class Album</h1>
+<ul class="list-group small-width">
+<li class="list-group-item active">Tosin</li>
+<li class="list-group-item">Zino</li>
+<li class="list-group-item">Sarah</li>
+<li class="list-group-item">Najeeb</li>
+<li class="list-group-item">Charles</li>
+</ul>
+<hr>
+<ul class="list-group small-width li-no-bullet">
+<li *ngFor="let trainees of academy">
+
+    <div class="card" style="width: 18rem;">
+        <img src="./assets/img/small.jpg" class="card-img-top profile_pic" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{trainees.name}}</h5>
+          <p><strong>Complexion</strong> {{trainees.complexion}}</p>
+          <p><strong>Hobbies</strong></p>
+          <ul>
+             <li *ngFor="let hobby of trainees.hobbies">{{hobby}} </li> 
+          </ul>
+        </div>
+      </div>
+    </li>
+    </ul> 
+    <hr>
+<!-- <app-album></app-album> -->
+</div>
